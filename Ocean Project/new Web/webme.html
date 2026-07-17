@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ocean of Game Library</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="webmee.css">
+<script src="jebme.js" defer></script>
+<script src="render.js" defer></script>
+</head>
+<body>
+ 
+<!-- ============ NAV ============ -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#" class="logo">OCEAN<span>LOG</span></a>
+    <nav class="main-nav">
+      <a href="#featured">Featured</a>
+      <a href="#library">Library</a>
+      <a href="#" class="nav-add">upcoming</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ HERO / FEATURED GAME ============ -->
+<section class="hero" id="featured">
+  <div class="hero-bg" style="background-image:url('assets/keyboard\ wallpaper.jpg');"></div>
+  <div class="hero-scrim"></div>
+  <div class="hero-content"> 
+    <p class="eyebrow">Games Collection, Cataloged</p>
+    <h1 class="hero-title">Every Game.<br>One Ocean.</h1>
+    <p class="hero-desc">Screenshots, specs, prices, and your own notes — all your games tracked in one place. Scroll down to browse your library.</p>
+    <div class="hero-meta">
+      <span class="tag">Games Tracked</span>
+      <span class="tag">Specs &amp; Pricing</span>
+      <span class="tag">Player Notes</span>
+    </div>
+    <div class="hero-actions">
+      <a href="#library" class="btn btn-primary">Browse Library ↓</a>
+      <a href="#" class="btn btn-ghost">upcoming</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LIBRARY GRID ============ -->
+<main class="library" id="library">
+  <div class="library-heading">
+    <h2>Your Library</h2>
+    <p>games tracked — add more anytime.</p>
+  </div>
+
+  <div class="game-grid">
+
+    <!-- ============ GAME CARD 1: RDR2 ============ -->
+    <article class="game-card" id="card-rdr2">
+      <div class="card-cover">
+        <img src="assets/images.jpg" alt="Red Dead Redemption 2 cover art">
+        <span class="price-tag">$59.99</span>
+      </div>
+
+      <div class="card-body">
+        <div class="card-heading">
+          <h3>Red Dead Redemption 2</h3>
+          <span class="rating">★ 4.8</span>
+        </div>
+        <p class="card-tags">
+          <span class="tag tag-small">Action</span>
+          <span class="tag tag-small">Western</span>
+          <span class="tag tag-small">Single-player</span>
+        </p>
+        <p class="card-desc">A sprawling epic of loyalty and betrayal in the dying days of the American frontier. Ride, hunt, rob, and survive as outlaw Arthur Morgan.</p>
+
+        <!-- Screenshot strip -->
+         <!--<div class="screenshot-strip">
+          <img src="https://picsum.photos/seed/rdr2s1/300/180" alt="Screenshot 1">
+          <img src="https://picsum.photos/seed/rdr2s2/300/180" alt="Screenshot 2">
+          <img src="https://picsum.photos/seed/rdr2s3/300/180" alt="Screenshot 3">
+        </div> -->
+        
+
+        <!-- Spec HUD -->
+        <div class="spec-hud">
+          <p class="spec-label">// SYSTEM REQUIREMENTS (RECOMMENDED)</p>
+          <div class="spec-row">
+            <span class="spec-key">CPU</span>
+            <span class="spec-val">Intel i7-4770K</span>
+            <div class="spec-bar"><div class="spec-fill" style="width:70%"></div></div>
+          </div>
+          <div class="spec-row">
+            <span class="spec-key">GPU</span>
+            <span class="spec-val">GTX 1060 6GB</span>
+            <div class="spec-bar"><div class="spec-fill" style="width:65%"></div></div>
+          </div>
+          <div class="spec-row">
+            <span class="spec-key">RAM</span>
+            <span class="spec-val">12 GB</span>
+            <div class="spec-bar"><div class="spec-fill" style="width:60%"></div></div>
+          </div>
+          <div class="spec-row">
+            <span class="spec-key">STORAGE</span>
+            <span class="spec-val">150 GB</span>
+            <div class="spec-bar"><div class="spec-fill" style="width:90%"></div></div>
+          </div>
+        </div>
+
+        <div class="card-footer">
+          <a href="https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/" target="_blank" rel="noopener" class="btn btn-primary btn-small">View on Steam ↗</a>
+        </div>
+
+        <!-- Comments -->
+        <div class="comments">
+          <p class="comments-label">// PLAYER LOG</p>
+          <div class="comment">
+            <span class="comment-user">tester_pranav</span>
+            <p>Ran flawlessly on my rig, but first launch took a while to compile shaders. Worth it.</p>
+          </div>
+          <div class="comment">
+            <span class="comment-user">retro_rider</span>
+            <p>The horse physics alone deserve a GOTY award.</p>
+          </div>
+          <button class="btn-add-comment">+ Add comment</button>
+        </div>
+      </div>
+    </article>
+
+    <!-- ============ GAME CARD 2: The Witcher 3 ============ -->
+    <article class="game-card" id="card-witcher3">
+      <div class="card-cover">
+        <img src="assets/Witcher_3_cover_art.jpg" alt="The Witcher 3 cover art">
+        <span class="price-tag">$39.99</span>
+      </div>
+
+      <div class="card-body">
+        <div class="card-heading">
+          <h3>The Witcher 3: Wild Hunt</h3>
+          <span class="rating">★ 4.9</span>
+        </div>
+        <p class="card-tags">
+          <span class="tag tag-small">RPG</span>
+          <span class="tag tag-small">Fantasy</span>
+          <span class="tag tag-small">Story Rich</span>
+        </p>
+        <p class="card-desc">As monster hunter Geralt of Rivia, track down your adopted daughter across a war-torn continent full of moral choices and hidden monsters.</p>
+
+        <!-- 
+        <div class="screenshot-strip">
+          <img src="https://picsum.photos/seed/witcher1/300/180" alt="Screenshot 1">
+          <img src="https://picsum.photos/seed/witcher2/300/180" alt="Screenshot 2">
+          <img src="https://picsum.photos/seed/witcher3/300/180" alt="Screenshot 3">
+        </div>-->
+
+        <div class="spec-hud">
+          <p class="spec-label">// SYSTEM REQUIREMENTS (RECOMMENDED)</p>
+          <div class="spec-row">
+            <span class="spec-key">CPU</span>
+            <span class="spec-val">Intel i7-3770</span>
+            <div class="spec-bar"><div class="spec-fill" style="width:55%"></div></div>
+          </div>
+          <div class="spec-row">
+            <span class="spec-key">GPU</span>
+            <span class="spec-val">GTX 770 2GB</span>
+            <div class="spec-bar"><div class="spec-fill" style="width:45%"></div></div>
+          </div>
+          <div class="spec-row">
+            <span class="spec-key">RAM</span>
+            <span class="spec-val">8 GB</span>
+            <div class="spec-bar"><div class="spec-fill" style="width:40%"></div></div>
+          </div>
+          <div class="spec-row">
+            <span class="spec-key">STORAGE</span>
+            <span class="spec-val">50 GB</span>
+            <div class="spec-bar"><div class="spec-fill" style="width:35%"></div></div>
+          </div>
+        </div>
+
+        <div class="card-footer">
+          <a href="https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/" target="_blank" rel="noopener" class="btn btn-primary btn-small">View on Steam ↗</a>
+        </div>
+
+        <div class="comments">
+          <p class="comments-label">// PLAYER LOG</p>
+          <div class="comment">
+            <span class="comment-user">geralt_fan22</span>
+            <p>Blood and Wine DLC might be better than the base game. Insane value.</p>
+          </div>
+          <button class="btn-add-comment">+ Add comment</button>
+        </div>
+      </div>
+    </article>
+
+    <!-- ============ GAME CARD 3: Cyberpunk 2077 ============ -->
+    <article class="game-card" id="card-cyberpunk">
+      <div class="card-cover">
+        <img src="assets/Cyberpunk 2077.avif" alt="Cyberpunk 2077 cover art">
+        <span class="price-tag">$59.99</span>
+      </div>
+
+      <div class="card-body">
+        <div class="card-heading">
+          <h3>Cyberpunk 2077</h3>
+          <span class="rating">★ 4.5</span>
+        </div>
+        <p class="card-tags">
+          <span class="tag tag-small">RPG</span>
+          <span class="tag tag-small">Cyberpunk</span>
+          <span class="tag tag-small">Open World</span>
+        </p>
+        <p class="card-desc">An open-world action RPG set in Night City, a megalopolis obsessed with power, glamour, and body modification. Play as V, a cyber-enhanced mercenary.</p>
+
+       <!-- 
+         <div class="screenshot-strip">
+          <img src="https://picsum.photos/seed/cyber1/300/180" alt="Screenshot 1">
+          <img src="https://picsum.photos/seed/cyber2/300/180" alt="Screenshot 2">
+          <img src="https://picsum.photos/seed/cyber3/300/180" alt="Screenshot 3">
+        </div> -->
+
+        <div class="spec-hud">
+          <p class="spec-label">// SYSTEM REQUIREMENTS (RECOMMENDED)</p>
+          <div class="spec-row">
+            <span class="spec-key">CPU</span>
+            <span class="spec-val">Ryzen 5 3600</span>
+            <div class="spec-bar"><div class="spec-fill" style="width:75%"></div></div>
+          </div>
+          <div class="spec-row">
+            <span class="spec-key">GPU</span>
+            <span class="spec-val">RTX 2060 Super</span>
+            <div class="spec-bar"><div class="spec-fill" style="width:80%"></div></div>
+          </div>
+          <div class="spec-row">
+            <span class="spec-key">RAM</span>
+            <span class="spec-val">16 GB</span>
+            <div class="spec-bar"><div class="spec-fill" style="width:80%"></div></div>
+          </div>
+          <div class="spec-row">
+            <span class="spec-key">STORAGE</span>
+            <span class="spec-val">70 GB (SSD)</span>
+            <div class="spec-bar"><div class="spec-fill" style="width:50%"></div></div>
+          </div>
+        </div>
+
+        <div class="card-footer">
+          <a href="https://store.steampowered.com/app/1091500/Cyberpunk_2077/" target="_blank" rel="noopener" class="btn btn-primary btn-small">View on Steam ↗</a>
+        </div>
+
+        <div class="comments">
+          <p class="comments-label">// PLAYER LOG</p>
+          <div class="comment">
+            <span class="comment-user">nightcity_v</span>
+            <p>Post 2.0 patch runs great. Phantom Liberty expansion is a genuinely great spy thriller.</p>
+          </div>
+          <button class="btn-add-comment">+ Add comment</button>
+        </div>
+      </div>
+    </article>
+
+    <!-- ============ "ADD YOUR OWN" CARD ============ -->
+    <!-- <article class="game-card add-card">
+      <div class="add-card-inner">
+        <div class="add-icon">+</div>
+        <h3>Add Another Game</h3>
+        <p>Copy one of the game-card blocks in the HTML and swap in your own title, cover, screenshots, Steam link, specs, price, and comments.</p>
+      </div>
+    </article> 
+    -->
+
+  </div>
+
+  <!-- <div class="library-heading library-heading-more">
+    <h2>More Games</h2>
+    <p>100 sample entries, generated from <code>jebme.js</code> — edit that file to update titles, prices, specs, or descriptions.</p>
+  </div>
+-->
+  <br>
+  <div class="game-grid" id="more-games-grid">
+    <!-- Cards are injected here by render.js from the GAMES array in jebme.js -->
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+ 
+    <div class="footer-col footer-about">
+      <a href="#" class="logo">OCEAN<span>LOG</span></a>
+      <p>A personal game library for tracking screenshots, specs, prices, and notes on the games you play. Built and maintained by one person, one entry at a time.</p>
+    </div>
+ 
+    <div class="footer-col">
+      <h4>Site</h4>
+      <ul class="footer-links">
+        <li><a href="#featured">Home</a></li>
+        <li><a href="#library">Library</a></li>
+        <li><a href="#about">About Us</a></li>
+      </ul>
+    </div>
+ 
+    <div class="footer-col">
+      <h4>Follow</h4>
+      <div class="social-links">
+        <a href="https://www.instagram.com/pranav_7_2?igsh=MWcyZ2tzczZhc2xvbw==" target="_blank" rel="noopener" aria-label="Instagram" class="social-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+          <span>Instagram</span>
+        </a>
+        <a href="https://youtube.com/@lord_ocean_72?si=sqncUk9c7IjR09gW" target="_blank" rel="noopener" aria-label="YouTube" class="social-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10.5 9.5l5 2.5-5 2.5z" fill="currentColor" stroke="none"/></svg>
+          <span>YouTube</span>
+        </a>
+      </div>
+    </div>
+ 
+  </div>
+ 
+  <div class="footer-bottom">
+    <p>© 2026 OceanLog. Not affiliated with Valve or Steam.</p>
+  </div>
+</footer>
+
+</body>
+</html>
